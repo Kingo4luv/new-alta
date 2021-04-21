@@ -129,7 +129,7 @@
 				</div>
 			</section>
 
-			<section class="section section--padded section--greyed">
+			<section class="section section--padded section">
 				<div class="container">
 					<div class="section__body">
 						<div class="section__heading section__heading--wide">
