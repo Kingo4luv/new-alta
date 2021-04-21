@@ -1,0 +1,57 @@
+.footer {
+	background-color: $grey-darker;
+	background-image: url('~/assets/img/alta-bg.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position-y: 8rem;
+	padding-top: 13rem;
+	color: $white;
+	font-family: 'SF Pro Text';
+	font-weight: 300;
+	&__logo {
+
+	}
+	&__body {
+		margin-right: 3rem;
+		p {
+			padding-top: 2.625rem;
+			@media #{$mobile} {
+				line-height: 1.75rem;
+			}
+		}
+	}
+	&__meta {
+		font-size: 0.875rem;
+		padding: 1.43rem;
+		text-align: center;
+		border-top: 1px solid rgba(130, 130, 130, 0.94);
+		margin-top: 10rem;
+		@media #{$mobile} {
+			font-size: 0.75rem;
+			text-align: left;
+		}
+	}
+	&__column {
+		@media #{$mobile} {
+			width: 50%;
+			padding-top: 3rem;
+		}
+		h5 {
+			text-transform: uppercase;
+			min-height: 4rem;
+			font-size: 1rem;
+			white-space: nowrap;
+		}
+		ul {
+			line-height: 1.75rem;
+		}
+	}
+	&__nav {
+		li {
+			margin-bottom: 1.25rem;
+		}
+		&--pad {
+			padding-top: 4rem;
+		}
+	}
+}

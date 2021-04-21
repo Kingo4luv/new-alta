@@ -1,0 +1,83 @@
+.btn {
+	border-radius: 50px;
+	height: 54px;
+	min-width: 210px;
+    line-height: 100%;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+	border: 1px solid;
+	border-color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+	outline: none;
+	text-align: center;
+    position: relative;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-evenly;
+	svg {
+		margin-left: 12px;
+	}
+    @media #{$mobile} {
+      border-radius: 33px;
+      height: 44px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+	&__primary {
+		background: $light-purple;
+		text-transform: uppercase;
+		color: $white;
+		&:hover {
+			color: $white;
+			background: $alta-purple;
+		}
+		&--outline {
+			border: 1px solid $light-purple;
+			color: $light-purple;
+			background: $white;
+			svg {
+				fill: $light-purple;
+			}
+		}
+	}
+	&__light {
+		color: $light-purple;
+		text-transform: uppercase;
+		background: $white;
+		border: 2px solid $light-purple;
+		path {
+			stroke: $light-purple;
+		}
+		&:hover {
+			color: $white;
+			background: $light-purple;
+			path {
+				stroke: $white;
+			}
+		}
+		&--outline {
+			border: 1px solid $white;
+			color: $white;
+			background: transparent;
+			&:hover {
+				background: $white;
+				color: $alta-purple;
+				path {
+					stroke: $alta-purple;
+				}
+			}
+			path {
+				stroke: $white;
+			}
+		}
+	}
+}
+
+.centered {
+	text-align: center;
+}

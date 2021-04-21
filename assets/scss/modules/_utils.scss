@@ -1,0 +1,40 @@
+.centered {
+	text-align: center;
+}
+.mobile {
+	&--hidden {
+		@media #{$mobile} {
+			display: none;
+		}
+	}
+}
+.border-0 {
+	border: none;
+}
+
+.flickity-button {
+	background: transparent;
+  }
+  
+  .flickity-prev-next-button {
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+  }
+  /* icon color */
+  .flickity-button-icon {
+	fill: #3D6DFF;
+  }
+  /* position outside */
+  .flickity-prev-next-button.previous {
+	left: -80px;
+	@media #{$mobile} {
+		left: -40px
+	}
+  }
+  .flickity-prev-next-button.next {
+	right: -80px;
+	@media #{$mobile} {
+		right: -10px;
+	}
+  }
